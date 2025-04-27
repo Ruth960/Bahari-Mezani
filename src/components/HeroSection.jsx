@@ -1,36 +1,84 @@
 import React from 'react';
 
 function HeroSection() {
-  const primaryColor = '#E9D8A6'; // Light Yellow
-  const textColorDark = '#001219'; // Dark Teal
-  const accentColorHover = '#0077BE'; // Darker Blue
+  const primaryColor = '#E9D8A6'; 
+  const textColorDark = '#001219'; 
+  const accentColorHover = '#0077BE'; 
 
   return (
     <div
-      className="flex flex-col gap-8 justify-center items-center w-full py-24"
-      style={{ backgroundColor: primaryColor }}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '2rem',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        padding: '6rem 0',
+        backgroundColor: primaryColor,
+      }}
     >
-      <div className="text-center p-8">
-        <video width="940" height="360" style={{padding: 10, margingBottom:10,}} controls>
+      <div
+        style={{
+          textAlign: 'center',
+          padding: '2rem',
+        }}
+      >
+        <video
+          width="940"
+          height="360"
+          style={{
+            padding: 10,
+            marginBottom: 10,
+          }}
+          controls
+        >
           <source src="https://youtu.be/jtlDoHnEymo?si=sKELLY7HrGmINf8P" type="video/mp4" />
-        
         </video>
-        <h1 className="text-5xl md:text-7xl font-black mb-4" style={{ color: textColorDark }}>
+        <h1
+          style={{
+            fontSize: '3rem',
+            fontWeight: '900',
+            marginBottom: '1rem',
+            color: textColorDark,
+          }}
+        >
           Welcome to Bahari Mezani
         </h1>
-        <p className="text-xl md:text-3xl mb-6" style={{ color: textColorDark }}>
+        <p
+          style={{
+            fontSize: '1.25rem',
+            marginBottom: '1.5rem',
+            color: textColorDark,
+          }}
+        >
           Innovating Sustainable tomorrow for a Greener Tomorrow
         </p>
-        <div className="flex gap-4 items-center justify-center">
+        <div
+          style={{
+            display: 'flex',
+            gap: '1rem',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
           <button
-            className="bg-white hover:bg-gray-200 text-accentColor py-3 px-6 rounded-full font-semibold transition duration-300 shadow-md"
-            style={{ backgroundColor: '#fff', fontWeight:'bold', color: 'black', ':hover': { backgroundColor: accentColorHover } }}
+            style={{
+              backgroundColor: '#fff',
+              fontWeight: 'bold',
+              color: 'black',
+              padding: '0.75rem 1.5rem',
+              borderRadius: '9999px',
+              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+              transition: 'background-color 0.3s',
+            }}
+            onMouseOver={(e) => (e.target.style.backgroundColor = accentColorHover)}
+            onMouseOut={(e) => (e.target.style.backgroundColor = '#fff')}
           >
             Book Now
           </button>
         </div>
       </div>
-      
     </div>
   );
 }

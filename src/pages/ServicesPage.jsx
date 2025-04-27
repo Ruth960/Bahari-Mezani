@@ -1,8 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import HeroSection from '../components/HeroSection'
 
-function HomePage() {
+import Navbar from '../components/Navbar'
+import Services from '../components/services'
+
+export default function ServicesPage() {
+
+
   const links = [
     { path: '/', text: 'Home' },
     { path: '/about', text: 'About' },
@@ -13,13 +16,11 @@ function HomePage() {
 
   return (
     <div>
-      <Navbar
+      <Navbar 
         title='Bahari Mezani'
-        links={links}
+        links={links} 
       />
-      <HeroSection />
+      <Services/>
     </div>
   )
 }
-
-export default HomePage

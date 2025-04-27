@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import AboutUs  from '../components/AboutUs'
+import ContactUs  from '../components/contacts'
+import Projects from '../components/projects'
 
 
-function AboutPage() {
-  
+export default function AboutPage() {
+
      const links = [
         { path: '/', text: 'Home' },
         { path: '/about', text: 'About' },
@@ -19,10 +20,8 @@ function AboutPage() {
             title='Bahari Mezani'
             links={links} 
           />
-      <AboutUs/>
+      <Projects/>
       
     </div>
   )
 }
-
-export default AboutPage

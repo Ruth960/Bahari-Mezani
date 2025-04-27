@@ -1,130 +1,110 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
-export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function Navbar({ links, title }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-
-  const navbarStyle = {
-    backgroundColor: "white",
-    padding: "2rem",
-    color: "black",
-    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+  // Toggle mobile menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
-
-  const containerStyle = {
-    maxWidth: "1200px",
-    margin: "0 auto",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  };
-
-  const logoStyle = {
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-    color: "#003366",
-  };
-
-  const desktopNavStyle = {
-    display: "none",
-    "@media (min-width: 768px)": { 
-      display: "flex",
-      gap: "1.5rem", 
-    },
-  };
-
-  const mobileMenuIconStyle = {
-    fontSize: "1.5rem",
-    cursor: "pointer",
-    "@media (min-width: 768px)": { 
-      display: "none",
-    },
-  };
-
-  const mobileNavStyle = {
-    display: menuOpen ? "block" : "none",
-    marginTop: "2rem", 
-    paddingLeft: "1rem", 
-    gap: "1rem", 
-    flexDirection: "column",
-    "@media (min-width: 768px)": {
-      display: "none",
-    },
-  };
-
-  const linkStyle = {
-    color: "white",
-    textDecoration: "none",
-    transition: "color 0.3s ease",
-    display: "block",
-  };
-
-  const linkHoverStyle = {
-    color: "#FFC107",
-  };
-
-  const navLinks = (isMobile = false) => (
-    <>
-      <li style={{ marginBottom: isMobile ? "0.5rem" : "0" }}>
-        <Link to="/" style={{ ...linkStyle, ":hover": linkHoverStyle }}>
-          Home
-        </Link>
-      </li>
-
-      <li style={{ marginBottom: isMobile ? "0.5rem" : "0" }}>
-        <Link to="/about" style={{ ...linkStyle, ":hover": linkHoverStyle }}>
-          About Us
-        </Link>
-      </li>
-
-      <li style={{ marginBottom: isMobile ? "0.5rem" : "0" }}>
-        <Link to="/fish-listings" style={{ ...linkStyle, ":hover": linkHoverStyle }}>
-          Services
-        </Link>
-      </li>
-
-      <li style={{ marginBottom: isMobile ? "0.5rem" : "0" }}>
-        <Link to="/fisherman-dashboard" style={{ ...linkStyle, ":hover": linkHoverStyle }}>
-          Projects
-        </Link>
-      </li>
-
-      <li style={{ marginBottom: isMobile ? "0.5rem" : "0" }}>
-        <Link to="/buyer-dashboard" style={{ ...linkStyle, ":hover": linkHoverStyle }}>
-          Contact Us
-        </Link>
-      </li>
-    </>
-  );
 
   return (
-    <nav style={navbarStyle}>
-      <div style={containerStyle}>
-        {/* Logo / Brand */}
-        <h1 style={logoStyle}>
-          Bahari Mezani
-        </h1>
-
-        {/* Desktop Navigation */}
-        <ul style={desktopNavStyle}>
-          {navLinks()}
-        </ul>
-
-        {/* Mobile Hamburger Menu Icon */}
-        <div style={mobileMenuIconStyle} onClick={toggleMenu}>
-          <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
-        </div>
+    <nav
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        backgroundColor: 'white',
+        height: '100%',
+        width: '20%',
+        margin: 'auto',
+        position: 'fixed',
+      }}
+    >
+      {/* Logo/Title area */}
+      <div
+        style={{
+          color: 'black',
+          fontWeight: 28,
+          fontSize: 'bold',
+          fontFamily: 'sans-serif',
+        }}
+        className="text-2xl font-bold cursor-pointer"
+      >
+        {title}
       </div>
 
-      {/* Mobile Navigation Menu */}
-      {menuOpen && (
-        <ul style={mobileNavStyle}>
-          {navLinks(true)}
-        </ul>
+      {/* Desktop Navigation Links */}
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'flex-start',
+        }}
+      >
+        {links &&
+          links.map((link, index) => (
+            <NavLink
+              key={index}
+              to={link.path}
+              className={({ isActive }) =>
+                `px-1 py-2.5 rounded-md cursor-pointer transition-all duration-300 ${
+                  isActive
+                    ? 'underline text-black'
+                    : 'hover:bg-opacity-10 hover:bg-black hover:text-white'
+                }`
+              }
+            >
+              {link.text}
+            </NavLink>
+          ))}
+      </div>
+
+      {/* Mobile menu button */}
+      <div className="flex items-center md:hidden">
+        <button
+          onClick={toggleMenu}
+          className="bg-transparent border-none cursor-pointer flex items-center justify-center"
+        >
+          {isMenuOpen ? (
+            <X size={24} className="text-slate-700" />
+          ) : (
+            <Menu size={24} className="text-slate-700" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div
+          className="
+            flex flex-col p-2 animate-fadeIn
+            backdrop-gray-md bg-slate-50/95
+          "
+        >
+          {links &&
+            links.map((link, index) => (
+              <NavLink
+                key={index}
+                to={link.path}
+                onClick={() => setIsMenuOpen(false)}
+                className={({ isActive }) =>
+                  `py-2 px-3 rounded-md text-center text-xl cursor-pointer transition-all duration-300 ${
+                    isActive
+                      ? 'underline text-black'
+                      : 'hover:bg-opacity-10 text-slate-700 hover:bg-black'
+                  }`
+                }
+              >
+                {link.text}
+              </NavLink>
+            ))}
+        </div>
       )}
     </nav>
   );
