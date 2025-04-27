@@ -19,19 +19,23 @@ export default function Navbar({ links, title }) {
         alignItems: 'center',
         padding: 10,
         backgroundColor: 'white',
-        height: '100%',
+        height: '100vh',
         width: '20%',
-        margin: 'auto',
         position: 'fixed',
+        top: 0,
+        left: 0,
+        boxShadow: '2px 0 5px rgba(0,0,0,0.1)',
+        zIndex: 1000,
       }}
     >
       {/* Logo/Title area */}
       <div
         style={{
           color: 'black',
-          fontWeight: 28,
-          fontSize: 'bold',
+          fontWeight: 'bold',
+          fontSize: '1.5rem',
           fontFamily: 'sans-serif',
+          marginBottom: '2rem',
         }}
         className="text-2xl font-bold cursor-pointer"
       >
@@ -45,6 +49,7 @@ export default function Navbar({ links, title }) {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'flex-start',
+          width: '100%',
         }}
       >
         {links &&
@@ -53,9 +58,9 @@ export default function Navbar({ links, title }) {
               key={index}
               to={link.path}
               className={({ isActive }) =>
-                `px-1 py-2.5 rounded-md cursor-pointer transition-all duration-300 ${
+                `px-1 py-2.5 rounded-md cursor-pointer transition-all duration-300 w-full ${
                   isActive
-                    ? 'underline text-black'
+                    ? 'underline text-black font-bold'
                     : 'hover:bg-opacity-10 hover:bg-black hover:text-white'
                 }`
               }

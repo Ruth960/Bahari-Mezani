@@ -1,22 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 
 function HomePage() {
-  const links = [
-    { path: '/', text: 'Home' },
-    { path: '/about', text: 'About' },
-    { path: '/services', text: 'Services' },
-    { path: '/projects', text: 'Projects' },
-    { path: '/contacts', text: 'Contacts' },
-  ];
-
   return (
     <div>
-      <Navbar
-        title='Bahari Mezani'
-        links={links}
-      />
       <HeroSection />
     </div>
   )
