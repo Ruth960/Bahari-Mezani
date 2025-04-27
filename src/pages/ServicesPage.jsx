@@ -15,7 +15,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div>
+    <div >
       <Navbar 
         title='Bahari Mezani'
         links={links} 
