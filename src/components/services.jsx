@@ -71,9 +71,9 @@ export default function Services() {
                             alt="Fish Fingerling Hatcheries" 
                             style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
                         />
-                        <h3>Fish Fingerling Hatcheries</h3>
+                        <h3 style={{ margin: 10, fontSize: 20, fontWeight:'bold'}}>Fish Fingerling Hatcheries</h3>
                         <p>Our hatcheries utilize advanced techniques to produce high-quality fish fingerlings, ensuring a sustainable supply for local aquaculture operations.</p>
-                    </div>
+                    </div> 
                     <div style={{
                         width: '300px',
                         textAlign: 'center',
@@ -89,7 +89,7 @@ export default function Services() {
                             alt="Sea Cage Farming" 
                             style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
                         />
-                        <h3>Sea Cage Farming</h3>
+                        <h3 style={{ margin: 10, fontSize: 20, fontWeight:'bold'}}>Sea Cage Farming</h3>
                         <p>We implement cutting-edge sea cage farming methods that promote optimal growth conditions while minimizing environmental impact.</p>
                     </div>
                     <div style={{
@@ -107,7 +107,7 @@ export default function Services() {
                             alt="Integrated Aquaculture Systems" 
                             style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
                         />
-                        <h3>Integrated Aquaculture Systems</h3>
+                        <h3 style={{ margin: 10, fontSize: 20, fontWeight:'bold'}}>Integrated Aquaculture Systems</h3>
                         <p>Our integrated systems combine aquaculture with other agricultural practices to enhance productivity and sustainability.</p>
                     </div>
                 </div>

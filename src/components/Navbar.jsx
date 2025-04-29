@@ -58,10 +58,10 @@ export default function Navbar({ links, title }) {
               key={index}
               to={link.path}
               className={({ isActive }) =>
-                `px-1 py-2.5 rounded-md cursor-pointer transition-all duration-300 w-full ${
+                `px-1 py-2.5 rounded-md cursor-pointer  transition-all duration-300 w-full ${
                   isActive
                     ? 'underline text-black font-bold'
-                    : 'hover:bg-opacity-10 hover:bg-black hover:text-white'
+                    : 'hover:bg-opacity-10 '
                 }`
               }
             >
