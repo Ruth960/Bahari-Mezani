@@ -111,6 +111,103 @@ export default function Recent(){
                 </p>
             </div>
         </div>
+
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent:'space-around',
+                gap: '20px',
+                
+                padding: '20px',
+                
+            }}
+        >
+            <img
+                src="/vite.svg"
+                alt="Aquaculture"
+                style={{
+                    width: '40%',
+                    height: 'auto',
+                    borderRadius: '10px',
+                }}
+            />
+            <div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
+                Waste-to-Value Program
+                </h3>
+                <p style={{ fontSize: '1rem', color: '#333', }}>
+                This project successfully converted organic waste into valuable compost and BSF larvae, 
+                enhancing soil health and providing a sustainable protein source for aquaculture
+                </p>
+            </div>
+        </div>
+
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent:'space-around',
+                gap: '20px',
+                
+                padding: '20px',
+                
+            }}
+        >
+            <img
+                src="/vite.svg"
+                alt="Aquaculture"
+                style={{
+                    width: '40%',
+                    height: 'auto',
+                    borderRadius: '10px',
+                }}
+            />
+            <div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
+                Community Training Workshops
+                </h3>
+                <p style={{ fontSize: '1rem', color: '#333', }}>
+                We conduct workshops aimed at educating local fishermen and farmers about sustainable practices, 
+                helping them adopt innovative techniques for better yield and environmental conservation.
+                </p>
+            </div>
+        </div>
+
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent:'space-around',
+                gap: '20px',
+                
+                padding: '20px',
+                
+            }}
+        >
+            <img
+                src="/vite.svg"
+                alt="Aquaculture"
+                style={{
+                    width: '40%',
+                    height: 'auto',
+                    borderRadius: '10px',
+                }}
+            />
+            <div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
+                Fish Fingerling Hatchery
+                </h3>
+                <p style={{ fontSize: '1rem', color: '#333', }}>
+                Our state-of-the-art hatchery project has significantly increased local fish fingerling availability, 
+                supporting sustainable fishing practices and community livelihoods.
+                </p>
+            </div>
+        </div>
+
     </div>
     )
 }
