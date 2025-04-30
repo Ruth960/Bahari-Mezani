@@ -12,7 +12,7 @@ import './layout.css'
 function App() {
   const links = [
     { path: '/', text: 'Home' },
-    { path: '/about', text: 'About' },
+    { path: '/about', text: 'About Us' },
     { path: '/services', text: 'Services' },
     { path: '/projects', text: 'Projects' },
     { path: '/contacts', text: 'Contacts' },
