@@ -57,11 +57,12 @@ export default function AboutUs() {
               backgroundColor: '#fff',
               borderRadius: '8px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+              
               padding: '20px',
             }}
           >
             <img
-              src="/images/alimg.jpg"
+              src="public/BahariMezaniPhotos/C.E.O.jpg"
               alt="Alphonce Owiti"
               style={{
                 width: '100%',
@@ -94,7 +95,7 @@ export default function AboutUs() {
             }}
           >
             <img
-              src="/images/alimg.jpg"
+              src="public/BahariMezaniPhotos/M2.jpg"
               alt="Mr. Juma Karanja"
               style={{
                 width: '100%',
@@ -127,7 +128,7 @@ export default function AboutUs() {
             }}
           >
             <img
-              src="/images/alimg.jpg"
+              src="public/BahariMezaniPhotos/m2.jpg"
               alt="Ms. Fatima Ali"
               style={{
                 width: '100%',
