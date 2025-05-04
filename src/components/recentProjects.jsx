@@ -157,7 +157,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="public/BahariMezaniPhotos/training2.jpg"
                 alt="Aquaculture"
                 style={{
                     width: '40%',

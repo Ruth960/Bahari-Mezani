@@ -95,7 +95,7 @@ export default function AboutUs() {
             }}
           >
             <img
-              src="public/BahariMezaniPhotos/M2.jpg"
+              src="public/BahariMezaniPhotos/b4.jpg"
               alt="Mr. Juma Karanja"
               style={{
                 width: '100%',
