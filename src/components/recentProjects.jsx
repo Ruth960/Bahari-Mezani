@@ -157,7 +157,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="public/BahariMezaniPhotos/training2.jpg"
+                src="public/BahariMezaniPhotos/TRAINING.jpg"
                 alt="Aquaculture"
                 style={{
                     width: '40%',
