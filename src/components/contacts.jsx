@@ -115,8 +115,59 @@ export default function ContactsUs() {
 
             </div>
 
+            <div
+                style={{
+                    backgroundColor: 'white',
+                    color: 'black',
+                    textAlign: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    padding: 20,
+                    alignItems: 'center',
+                }}
+            >
+                <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem' }}>
+                    Connect with Us
+                </h1>
+                <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color: 'grey' }}>
+                    Join our community on social media to stay updated on our projects and initiatives aimed at sustainable development.
+                </p>
+                <div style={{ display: 'flex', gap: '20px' }}>
+                    <button
+                        style={{
+                            padding: '10px 15px',
+                            borderRadius: '5px',
+                            border: 'none',
+                            backgroundColor: '#4267B2', // Example Facebook color
+                            color: 'white',
+                            fontSize: '1rem',
+                            cursor: 'pointer',
+                        }}
+                        onClick={() => window.open('YOUR_FACEBOOK_LINK', '_blank')}
+                    >
+                        Facebook
+                    </button>
+                    <button
+                        style={{
+                            padding: '10px 15px',
+                            borderRadius: '5px',
+                            border: 'none',
+                            backgroundColor: '#1DA1F2', // Example Twitter color
+                            color: 'white',
+                            fontSize: '1rem',
+                            cursor: 'pointer',
+                        }}
+                        onClick={() => window.open('YOUR_TWITTER_LINK', '_blank')}
+                    >
+                        Twitter
+                    </button>
+                    {/* Add more social media buttons as needed */}
+                </div>
+            </div>
+
             <div>
-                
+
             </div>
 
         </div>
