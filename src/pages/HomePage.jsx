@@ -5,7 +5,7 @@ import Feedback from '../components/Feedback'
 
 function HomePage() {
   return (
-    <div>
+    <div style={{backgroundColor:'#E9D8A6'}}>
       <HeroSection />
       <RecentProjects/>
       <Feedback />

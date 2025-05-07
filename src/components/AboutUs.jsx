@@ -31,7 +31,7 @@ export default function AboutUs() {
           justifyContent: 'space-around',
           padding: 20,
           margin: 10,
-          backgroundColor: '#F9F9F9',
+          backgroundColor:'#E9D8A6',
         }}
       >
         <h1 style={{ fontSize: 28, textAlign: 'center', fontWeight: 'bold' }}>

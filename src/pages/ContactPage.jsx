@@ -3,7 +3,7 @@ import ContactsUs from '../components/contacts'
 
 export default function ContactPage() {
   return (
-    <div>
+    <div style={{backgroundColor:'#E9D8A6'}}>
       <ContactsUs/>
     </div>
   )

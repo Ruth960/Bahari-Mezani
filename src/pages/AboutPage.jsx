@@ -3,7 +3,7 @@ import AboutUs from '../components/AboutUs'
 
 function AboutPage() {
   return (
-    <div>
+    <div style={{backgroundColor:'#E9D8A6'}}>
       <AboutUs/>
     </div>
   )

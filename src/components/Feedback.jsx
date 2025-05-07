@@ -36,9 +36,9 @@ export default function Feedback(){
                 src="/images/johnKazungu.png"
                 alt="feedback"
                 style={{
-                    width: '40%',
+                    width: 'auto',
                     height: 'auto',
-                    borderRadius: '10px',
+                    borderRadius: '5px',
                 }}
             />
             <div>
@@ -69,9 +69,9 @@ export default function Feedback(){
                 src="public/images/sarahPolet.png"
                 alt="Aquaculture"
                 style={{
-                    width: '40%',
+                    width: 'auto',
                     height: 'auto',
-                    borderRadius: '10px',
+                    borderRadius: '5px',
                 }}
             />
             <div>
@@ -102,9 +102,9 @@ export default function Feedback(){
                 src="/images/environmentalScientist.png"
                 alt="Aquaculture"
                 style={{
-                    width: '40%',
-                    height: '100',
-                    borderRadius: '10px',
+                    width: 'auto',
+                    height: 'auto',
+                    borderRadius: '5px',
                 }}
             />
             <div>
