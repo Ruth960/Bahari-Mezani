@@ -33,8 +33,8 @@ export default function Feedback(){
             }}
         >
             <img
-                src="/vite.svg"
-                alt="Aquaculture"
+                src="/images/johnKazungu.png"
+                alt="feedback"
                 style={{
                     width: '40%',
                     height: 'auto',
@@ -66,7 +66,7 @@ export default function Feedback(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="public/images/sarahPolet.png"
                 alt="Aquaculture"
                 style={{
                     width: '40%',
@@ -99,11 +99,11 @@ export default function Feedback(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="/images/environmentalScientist.png"
                 alt="Aquaculture"
                 style={{
                     width: '40%',
-                    height: 'auto',
+                    height: '100',
                     borderRadius: '10px',
                 }}
             />

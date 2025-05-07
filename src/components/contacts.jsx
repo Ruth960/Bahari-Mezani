@@ -9,13 +9,14 @@ export default function ContactsUs() {
         }}>
             <div
                 style={{
-                    backgroundImage: "linear-gradient(to right,rgb(231, 158, 231),rgb(146, 11, 117))",
+                    backgroundImage: "url('/images/ContactBg.PNG')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center', 
                     padding:20,
+                    height: 400,
                     alignItems: 'center',
                     color: 'white',
                     textAlign: 'center',

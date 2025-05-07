@@ -25,7 +25,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="/images/aquaculture.webp"
                 alt="Aquaculture"
                 style={{
                     width: '40%',
@@ -59,7 +59,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="/images/aquaponics.webp"
                 alt="Community Aquaponics Project"
                 style={{
                     width: '40%',
@@ -92,10 +92,10 @@ export default function Recent(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="/images/waste-management.webp"
                 alt="BSF Waste Management"
                 style={{
-                    width: '50%',
+                    width: '40%',
                     height: 'auto',
                     borderRadius: '10px',
                 }}
@@ -125,7 +125,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="/images/waste-to-value.webp"
                 alt="Aquaculture"
                 style={{
                     width: '40%',
@@ -157,7 +157,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="public/BahariMezaniPhotos/TRAINING.jpg"
+                src="/BahariMezaniPhotos/TRAINING .jpg"
                 alt="Aquaculture"
                 style={{
                     width: '40%',
@@ -189,7 +189,7 @@ export default function Recent(){
             }}
         >
             <img
-                src="/vite.svg"
+                src="/images/fish-fingerling.webp"
                 alt="Aquaculture"
                 style={{
                     width: '40%',

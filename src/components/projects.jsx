@@ -9,7 +9,7 @@ export default function Projects() {
             <div
 
                 style={{
-                    backgroundImage: "linear-gradient(to right,rgb(231, 158, 231),rgb(146, 11, 117))",
+                    backgroundImage: "url('/images/projectsBg.PNG')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     height: '40vh',

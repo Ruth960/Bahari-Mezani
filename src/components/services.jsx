@@ -17,7 +17,7 @@ export default function Services() {
             backgroundColor:"#E9D8A6",
         }}>
             <div style={{
-                backgroundImage: 'linear-gradient(to right, #00c6ff, #0072ff)',
+                 backgroundImage: "url('/images/servicesBg.PNG')",
                 height: '300px',
                 display: 'flex',
                 flexDirection: 'column',

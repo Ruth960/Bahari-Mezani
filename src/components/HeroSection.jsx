@@ -1,22 +1,25 @@
 import React from 'react';
 
 function HeroSection() {
-  const primaryColor = '#E9D8A6'; 
+   
   const textColorDark = '#001219'; 
   const accentColorHover = '#0077BE'; 
 
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '2rem',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        padding: '6rem 0',
-        backgroundColor: primaryColor,
-      }}
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '2rem',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '100%',
+      height: '600px', 
+      padding: '20',
+      backgroundImage: "url('/images/homeBg.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }}
     >
       <div
         style={{
@@ -33,7 +36,7 @@ function HeroSection() {
           }}
           controls
         >
-          <source src="https://youtu.be/jtlDoHnEymo?si=sKELLY7HrGmINf8P" type="video/mp4" />
+          <source src="https://youtu.be/jtlDoHnEymo?si=TX81Y82-YgD4pXUB" type="video/mp4" />
         </video>
         <h1
           style={{
