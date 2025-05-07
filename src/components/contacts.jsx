@@ -79,7 +79,7 @@ export default function ContactsUs() {
 
             <div
                 style={{
-                    backgroundColor:'white',
+                    backgroundColor:'transparent',
                     color: 'black',
                     textAlign: 'center',
                     display: 'flex',

@@ -67,7 +67,7 @@ export default function Services() {
                         margin:10,
                     }}>
                         <img 
-                            src="/vite.svg" 
+                            src="/images/hatcheries.PNG" 
                             alt="Fish Fingerling Hatcheries" 
                             style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
                         />
@@ -85,7 +85,7 @@ export default function Services() {
                         margin:10,
                     }}>
                         <img 
-                            src="/vite.svg" 
+                            src="/images/seaCages.PNG" 
                             alt="Sea Cage Farming" 
                             style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
                         />
@@ -103,7 +103,7 @@ export default function Services() {
                         margin:10,
                     }}>
                         <img 
-                            src="/vite.svg" 
+                            src="/images/aquacultureIntergratedSystem.PNG" 
                             alt="Integrated Aquaculture Systems" 
                             style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
                         />
@@ -160,11 +160,11 @@ export default function Services() {
                         
                     }}>
                         <img 
-                            src="/vite.svg" 
+                            src="/images/blackSoldier.PNG" 
                             alt="Fish Fingerling Hatcheries" 
-                            style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
+                            style={{ width: 'auto', height: '250px', objectFit: 'cover' }} 
                         />
-                        <div>
+                        <div style={{marginLeft: 150,}}>
                             <h3 style={titleStyle}>Black Soldier Fly Farming</h3>
                             <p>We utilize BSF farming to convert organic waste into high-quality protein feed, promoting a circular economy and reducing waste disposal challenges.</p>
                         </div>
@@ -185,11 +185,11 @@ export default function Services() {
                         
                     }}>
                         <img 
-                            src="/vite.svg" 
+                            src="/images/composite.PNG" 
                             alt="Fish Fingerling Hatcheries" 
-                            style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
+                            style={{ width: 'auto', height: '250px', objectFit: 'cover' }} 
                         />
-                        <div>
+                        <div style={{marginLeft: 150,}}>
                             <h3 style={titleStyle}>Composting Techniques</h3>
                             <p>Our composting services transform organic waste into nutrient-rich compost, enhancing soil health and promoting sustainable agricultural practices.</p>
                         </div>
@@ -204,17 +204,17 @@ export default function Services() {
                         overflow: 'hidden',
                         margin: 10,
                         padding: 20,
-                        justifyContent:'space-around',
+                        justifyContent:'space-between',
                         display:'flex',
                         flexDirection:'row',
                         
                     }}>
                         <img 
-                            src="/vite.svg" 
+                            src="/images/wasteToenergy.PNG" 
                             alt="Fish Fingerling Hatcheries" 
-                            style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
+                            style={{ width: 'auto', height: '250px', objectFit: 'cover' }} 
                         />
-                        <div>
+                        <div style={{marginLeft: 150,}}>
                             <h3 style={titleStyle}>Waste-to-Energy Solutions</h3>
                             <p>We develop waste-to-energy systems that convert organic waste into renewable energy, contributing to energy sustainability and reduced emissions.</p>
                         </div>

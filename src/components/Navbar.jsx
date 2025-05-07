@@ -22,6 +22,15 @@ export default function Navbar({ links, title }) {
         zIndex: 1000,
       }}
     >
+
+<div
+        style={{
+         
+        }}
+        className="text-2xl font-bold cursor-pointer"
+      >
+        <img width={100} src="logo.jpeg" />
+      </div>
       {/* Logo/Title area */}
       <div
         style={{
@@ -42,7 +51,7 @@ export default function Navbar({ links, title }) {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           width: '100%',
         }}
       >
