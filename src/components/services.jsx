@@ -17,7 +17,7 @@ export default function Services() {
             backgroundColor:"#E9D8A6",
         }}>
             <div style={{
-                backgroundImage: "url('/images/servicesBg.PNG')",,
+                 backgroundImage: "url('/images/servicesBg.PNG')",
                 height: '300px',
                 display: 'flex',
                 flexDirection: 'column',
