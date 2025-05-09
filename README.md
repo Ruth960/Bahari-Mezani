@@ -97,3 +97,4 @@ Here’s a sample schema for Supabase (PostgreSQL):
 
 ---
 
+# Bahari-Mezani
