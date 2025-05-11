@@ -132,7 +132,7 @@ export default function Services() {
         </div>
         <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
           <img
-            src="/images/Discussion.jpg"
+            src="/Discussion.jpg"
             alt="Consultation Services"
             className="w-full md:w-1/2 h-48 object-cover"
           />
