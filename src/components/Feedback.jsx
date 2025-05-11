@@ -23,7 +23,7 @@ export default function Feedback() {
         {/* Feedback 2 */}
         <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-md">
           <img
-            src="public/images/profile.png"
+            src="/images/profile.png""
             alt="Aquaculture"
             className="w-32 h-32 rounded-full mb-4"
           />
