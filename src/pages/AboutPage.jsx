@@ -3,7 +3,7 @@ import AboutUs from '../components/AboutUs'
 
 function AboutPage() {
   return (
-    <div style={{backgroundColor:'#E9D8A6'}}>
+    <div className='bg-gradient-to-r from-blue-200 to-green-300' >
       <AboutUs/>
     </div>
   )

@@ -1,78 +1,53 @@
-
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-export default function Navbar({ links, title }) {
+export default function Navbar({ links }) {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10,
-        backgroundColor: 'white',
-        height: '100vh',
-        width: '20%',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        boxShadow: '2px 0 5px rgba(0,0,0,0.1)',
-        zIndex: 1000,
-      }}
-    >
+    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div className="flex items-center justify-between px-4 py-3 md:px-8">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <img src="logo.jpeg" alt="Logo" className="w-10 h-10" />
+          <h1 className="text-2xl font-bold">
+            <span className="text-blue-500">Bahari</span>
+            <span className="text-green-500">Mezani</span>
+          </h1>
+        </div>
 
-<div
-        style={{
-         
-        }}
-        className="text-2xl font-bold cursor-pointer"
-      >
-        <img width={100} src="logo.jpeg" />
-      </div>
-      {/* Logo/Title area */}
-      <div
-        style={{
-          color: 'black',
-          fontWeight: 'bold',
-          fontSize: '1.5rem',
-          fontFamily: 'sans-serif',
-          marginBottom: '2rem',
-        }}
-        className="text-2xl font-bold cursor-pointer"
-      >
-        {title}
-      </div>
+        {/* Hamburger Menu */}
+        <button
+          className="text-2xl md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          ☰
+        </button>
 
-      {/* Desktop Navigation Links */}
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100%',
-        }}
-      >
-        {links &&
-          links.map((link, index) => (
-            <NavLink
-              key={index}
-              to={link.path}
-              className={({ isActive }) =>
-                `px-1 py-2.5 rounded-md cursor-pointer  transition-all duration-300 w-full ${
-                  isActive
-                    ? 'underline text-black'
-                    : 'hover:bg-opacity-0.4 hover:underline hover:text-black'
-                }`
-              }
-            >
-              {link.text}
-            </NavLink>
-          ))}
+        {/* Navigation Links */}
+        <div
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } md:flex flex-col md:flex-row md:items-center md:gap-4 w-full md:w-auto`}
+        >
+          {links &&
+            links.map((link, index) => (
+              <NavLink
+                key={index}
+                to={link.path}
+                className={({ isActive }) =>
+                  `block px-4 py-2 text-lg ${
+                    isActive
+                      ? 'text-blue-500 underline'
+                      : 'hover:text-blue-500'
+                  }`
+                }
+              >
+                {link.text}
+              </NavLink>
+            ))}
+        </div>
       </div>
-      
     </nav>
   );
 }

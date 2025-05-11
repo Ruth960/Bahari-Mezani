@@ -19,9 +19,9 @@ function App() {
   ];
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div>
       <Navbar title='Bahari Mezani' links={links} />
-      <div className="content-area">
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
-      </div>
+      
     </div>
   )
 }
