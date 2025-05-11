@@ -1,48 +1,28 @@
 import React from 'react';
 import RecentProjects from '../components/recentProjects';
+
 export default function Projects() {
-    return (
-        <div style={{
-            backgroundColor:'#E9D8A6'
-        }}>
-            {/* Header Section */}
-            <div
+  return (
+    <div>
+      {/* Header Section */}
+      <div
+        className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white text-center p-5"
+        style={{ backgroundImage: "url('/images/projectsBg.PNG')" }}
+      >
+        <h1 className="text-4xl font-bold mb-4">Innovative Projects for Sustainable Growth</h1>
+        <p className="text-lg">Transforming Communities Through Sustainable Practices</p>
+      </div>
 
-                style={{
-                    backgroundImage: "url('/images/projectsBg.PNG')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    height: '40vh',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    color: 'white',
-                    textAlign: 'center',
-                    padding: '20px',
-                    margin: 10,
-                }}
-            >
-                <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem' }}>
-                    Innovative Projects for Sustainable Growth
-                </h1>
-                <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
-                    Transforming Communities Through Sustainable Practices
-                </p>
-            </div>
+      {/* Content Section */}
+      <div className="text-center p-5">
+        <h2 className="text-2xl font-bold mb-4">Current Sustainable Initiatives</h2>
+        <p className="text-lg mb-6">
+          Empowering local communities through innovative agricultural and aquaculture projects.
+        </p>
 
-            {/* Content Section */}
-            <div>
-                <h2 style={{ fontSize: '2rem', textAlign: 'center', margin: '20px 0' }}>
-                    Current Sustainable Initiatives
-                </h2>
-                <p style={{ fontSize: '1.2rem', textAlign: 'center', marginBottom: '2rem' }}>
-                    Empowering local communities through innovative agricultural and aquaculture projects.
-                </p>
-
-                {/* Projects Section */}
-                <RecentProjects />
-            </div>
-        </div>
-    );
+        {/* Projects Section */}
+        <RecentProjects />
+      </div>
+    </div>
+  );
 }
