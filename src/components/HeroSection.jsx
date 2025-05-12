@@ -16,10 +16,10 @@ function HeroSection() {
           type="video/mp4"
         />
       </video>
-      <h1 className="text-3xl font-bold mb-4 text-center text-[#e8f0f3] sm:text-2xl md:text-xl">
+      <h1 className="text-4xl font-bold mb-2 text-center text-white ">
         Welcome to Bahari Mezani
       </h1>
-      <p className="text-lg mb-6 text-center text-[#eef6f9] sm:text-base md:text-sm">
+      <p className="text-lg text-3xl mb-6 text-center text-white ">
         Innovating Sustainable tomorrow for a Greener Tomorrow
       </p>
       <div className="flex gap-4 justify-center items-center">

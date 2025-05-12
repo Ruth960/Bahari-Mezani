@@ -5,10 +5,10 @@ export default function AboutUs() {
     <div>
       {/* Header Section */}
       <div
-        className="flex flex-col items-center justify-center h-[400px] bg-cover bg-center text-white text-center"
-        style={{ backgroundImage: "url('/images/aboutBg.PNG')" }}
+        className="flex flex-col items-center justify-center h-[400px] bg-cover  backdrop-opacity-30  tex-grey text-center"
+        style={{ backgroundImage: "url('/images/aboutBg.PNG'), " }}
       >
-        <h1 className="text-4xl font-bold mb-4">Welcome to Bahari Mezani</h1>
+        <h1 className="text-4xl font-bold  mb-4">Welcome to Bahari Mezani</h1>
         <p>Innovative solution for sustainable Development</p>
       </div>
 
@@ -35,7 +35,7 @@ export default function AboutUs() {
           {/* Team Member 2 */}
                 <div className="bg-white rounded-lg shadow-md p-5 text-center">
                 <img
-                  src="public/BahariMezaniPhotos/b4.jpg"
+                  src="/images/ruth.jpeg"
                   alt="Ruth Wanjiru Mwaniki"
                   className="w-full  h-48 object-contain rounded-lg mb-4"
                 />
