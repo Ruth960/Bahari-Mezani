@@ -36,7 +36,7 @@ export default function Recent() {
       {/* Project 3 */}
       <div className="flex flex-col items-center gap-4 p-5 bg-white rounded-lg shadow-md">
         <img
-          src="/images/waste-management.webp"
+          src="/images/bsf.jpg"
           alt="BSF Waste Management"
           className="w-full h-auto rounded-lg"
         />

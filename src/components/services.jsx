@@ -75,11 +75,11 @@ export default function Services() {
         </div>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/* Card 1 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-col">
             <img
               src="/images/blackSoldier.PNG"
               alt="Black Soldier Fly Farming"
-              className="w-full md:w-1/2 h-48 object-cover"
+              className="w-full p-1 h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-bold mb-2">Black Soldier Fly Farming</h3>
@@ -91,11 +91,11 @@ export default function Services() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-col">
             <img
               src="/images/composite.PNG"
               alt="Composting Techniques"
-              className="w-full md:w-1/2 h-48 object-cover"
+              className="w-full p-1 h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-bold mb-2">Composting Techniques</h3>
@@ -107,11 +107,11 @@ export default function Services() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden  flex flex-col md:flex-col">
             <img
               src="/images/wasteToenergy.PNG"
               alt="Waste-to-Energy Solutions"
-              className="w-full md:w-1/2 h-48 object-cover"
+              className="w-full p-1 h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-bold mb-2">Waste-to-Energy Solutions</h3>
@@ -125,8 +125,8 @@ export default function Services() {
       </div>
 
       {/* Consultation Services Section */}
-      <div className="p-5">
-        <div className="text-center mb-8">
+      <div className="p-5 m-10 w-3/4 mx-auto">
+        <div className="text-center mb-8 ">
           <h1 className="text-3xl font-bold">Consultation Services</h1>
           <p className="text-gray-600">Expert Guidance for Sustainable Practices</p>
         </div>
@@ -134,9 +134,9 @@ export default function Services() {
           <img
             src="/Discussion.jpg"
             alt="Consultation Services"
-            className="w-full md:w-1/2 h-48 object-cover"
+            className="w-100 md:w-1/2 h100 object-cover p-10"
           />
-          <div className="p-4">
+          <div className="p-10">
             <h3 className="text-xl font-bold mb-2">Sustainable Development Consultation</h3>
             <p className="text-gray-600">
               Our team of experts provides insights and strategies for implementing sustainable

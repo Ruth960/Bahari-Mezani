@@ -22,7 +22,7 @@ export default function AboutUs() {
             <img
               src="public/BahariMezaniPhotos/C.E.O.jpg"
               alt="Alphonce Owiti"
-              className="w-full h-48 object-cover rounded-lg mb-4"
+              className="w-full  h-48 object-contain rounded-lg mb-4"
             />
             <h2 className="text-xl font-bold">Alphonce Owiti</h2>
             <p className="text-sm text-gray-600">
@@ -33,26 +33,26 @@ export default function AboutUs() {
           </div>
 
           {/* Team Member 2 */}
-          <div className="bg-white rounded-lg shadow-md p-5 text-center">
-            <img
-              src="public/BahariMezaniPhotos/b4.jpg"
-              alt="Mr. Juma Karanja"
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
-            <h2 className="text-xl font-bold">Mr. Juma Karanja</h2>
-            <p className="text-sm text-gray-600">
-              Mr. Karanja serves as the Operations Manager, overseeing the implementation of our innovative
-              practices. His background in fisheries management ensures that our projects align with both
-              community needs and environmental goals.
-            </p>
-          </div>
+                <div className="bg-white rounded-lg shadow-md p-5 text-center">
+                <img
+                  src="public/BahariMezaniPhotos/b4.jpg"
+                  alt="Ruth Wanjiru Mwaniki"
+                  className="w-full  h-48 object-contain rounded-lg mb-4"
+                />
+                <h2 className="text-xl font-bold">Ruth Wanjiru Mwaniki</h2>
+                <p className="text-sm text-gray-600">
+                  Mr. Karanja serves as the Operations Manager, overseeing the implementation of our innovative
+                  practices. His background in fisheries management ensures that our projects align with both
+                  community needs and environmental goals.
+                </p>
+                </div>
 
-          {/* Team Member 3 */}
+                {/* Team Member 3 */}
           <div className="bg-white rounded-lg shadow-md p-5 text-center">
             <img
               src="public/BahariMezaniPhotos/m2.jpg"
               alt="Ms. Fatima Ali"
-              className="w-full h-48 object-cover rounded-lg mb-4"
+              className="w-full h-48 object-contain rounded-lg mb-4"
             />
             <h2 className="text-xl font-bold">Ms. Fatima Ali</h2>
             <p className="text-sm text-gray-600">
