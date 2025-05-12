@@ -41,9 +41,8 @@ export default function AboutUs() {
                 />
                 <h2 className="text-xl font-bold">Ruth Wanjiru Mwaniki</h2>
                 <p className="text-sm text-gray-600">
-                  Mr. Karanja serves as the Operations Manager, overseeing the implementation of our innovative
-                  practices. His background in fisheries management ensures that our projects align with both
-                  community needs and environmental goals.
+                  Ruth Wanjiru serves as the CTO, overseeing the online activities to strengthen Bahari Mezani's
+                  digital presence. With a background in Computer Science and a passion for technology, she ensures the company's digital platforms are innovative and user-friendly.
                 </p>
                 </div>
 
