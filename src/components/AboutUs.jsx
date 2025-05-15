@@ -12,6 +12,25 @@ export default function AboutUs() {
         <p>Innovative solution for sustainable Development</p>
       </div>
 
+      <div className="bg-none rounded-lg flex flex-row p-5 text-center">
+            <div className='flex flex-col items-start w-3/4'>
+              <img
+                src="/images/Team Members for BM.jpg"
+                alt="Team Members"
+                className="w-full  h-100  object-fill rounded-lg"
+              />
+            </div>
+            <div className='flex flex-col items-center w-1/4'>
+              <h2 className="text-xl font-bold">Empowerment Through Sustainability</h2>
+              <p className="text-sm text-gray-600">
+                At Bahari Mezani, we believe in empowering communities by integrating sustainable 
+                practices in agriculture and aquaculture. Our mission is to create innovative solutions that
+                 not only support economic growth but also protect the environment..
+              </p>
+            </div>
+            
+          </div>
+
       {/* Meet Our Team Section */}
       <div >
         <h1 className="text-2xl font-bold text-center mb-4">Meet Our Team</h1>

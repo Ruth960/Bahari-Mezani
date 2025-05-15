@@ -8,7 +8,7 @@ function HeroSection() {
       style={{ backgroundImage: "url('/images/homeBg.png')" }}
     >
       <video
-        className="w-full max-w-[940px] p-2 mb-2 sm:max-w-[720px] md:max-w-[540px]"
+        className="w-full  p-2 m-5 sm:max-w-[940px] md:max-w-[940px]"
         controls
       >
         <source
