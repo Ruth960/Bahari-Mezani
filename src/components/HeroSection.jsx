@@ -4,7 +4,7 @@ function HeroSection() {
 
   return (
     <div
-      className="flex flex-col gap-8 justify-center items-center w-full h-[600px] p-5 bg-cover bg-center sm:h-[500px] md:h-[400px] lg:h-[600px]"
+      className="flex flex-col gap-8 justify-center items-center w-full h-200 p-5 bg-cover bg-center ]"
       style={{ backgroundImage: "url('/images/homeBg.png')" }}
     >
       <video

@@ -5,7 +5,7 @@ export default function AboutUs() {
     <div>
       {/* Header Section */}
       <div
-        className="flex flex-col items-center justify-center h-[400px] bg-contain  backdrop-opacity-30  tex-grey text-center"
+        className="flex flex-col items-center justify-center h-[400px] bg-cover  backdrop-opacity-30  tex-grey text-center"
         style={{ backgroundImage: "url('/images/aboutBg.PNG')" }}
       >
         <h1 className="text-4xl font-bold  mb-4">Welcome to Bahari Mezani</h1>
