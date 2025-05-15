@@ -4,7 +4,7 @@ export default function ContactsUs() {
       {/* Header Section */}
       <div
         className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white text-center p-5"
-        style={{ backgroundImage: "url('/images/ContactBg.PNG')" }}
+        style={{ backgroundImage: "url('/images/ContactBg.PNG')", opacity: 0.8 }}
       >
         <h1 className="text-4xl font-bold mb-4">Stay Informed</h1>
         <p className="text-lg mb-6">
@@ -33,9 +33,15 @@ export default function ContactsUs() {
         <p className="text-lg text-gray-600 mb-6">
           Join our community on social media to stay updated on our projects and initiatives aimed at sustainable development.
         </p>
-        <button className="px-6 py-3 bg-blue-500 text-white rounded-lg">
-          Follow Us
-        </button>
+        <a
+          href="https://www.linkedin.com/company/mesuct/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="px-6 py-3 bg-blue-500 text-white rounded-lg">
+            Follow Us
+          </button>
+        </a>
       </div>
 
       {/* Visit Us Section */}
