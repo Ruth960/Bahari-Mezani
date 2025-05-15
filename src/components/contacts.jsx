@@ -1,4 +1,47 @@
+import { useState } from 'react';
+import { supabase } from '../supabaseClient';
+
 export default function ContactsUs() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    if (!formData.name || !formData.email || !formData.message) {
+      setError('All fields are required.');
+      return false;
+    }
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      setError('Please enter a valid email address.');
+      return false;
+    }
+    return true;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setSuccess('');
+
+    if (!validateForm()) return;
+
+    // Use the correct table name
+    const { data, error } = await supabase.from('contact_table').insert([formData]);
+
+    if (error) {
+      console.error('Supabase Error:', error);
+      setError('Something went wrong. Please try again.');
+    } else {
+      setSuccess('Thank you for contacting us!');
+      setFormData({ name: '', email: '', message: '' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-200 to-green-300"> 
       {/* Header Section */}
@@ -53,23 +96,39 @@ export default function ContactsUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Form */}
           <div className="p-4">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full p-3 mb-4 rounded-lg border border-gray-300"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full p-3 mb-4 rounded-lg border border-gray-300"
-            />
-            <textarea
-              placeholder="Message"
-              className="w-full p-3 mb-4 rounded-lg border border-gray-300 resize-none h-24"
-            ></textarea>
-            <button className="w-full p-3 bg-blue-500 text-white rounded-lg">
-              Submit
-            </button>
+            {error && <p className="text-red-500 mb-4">{error}</p>}
+            {success && <p className="text-green-500 mb-4">{success}</p>}
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full p-3 mb-4 rounded-lg border border-gray-300"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full p-3 mb-4 rounded-lg border border-gray-300"
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full p-3 mb-4 rounded-lg border border-gray-300 resize-none h-24"
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full p-3 bg-blue-500 text-white rounded-lg"
+              >
+                Submit
+              </button>
+            </form>
           </div>
 
           {/* Map */}

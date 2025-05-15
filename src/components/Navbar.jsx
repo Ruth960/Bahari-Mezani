@@ -11,7 +11,7 @@ export default function Navbar({ links }) {
         <div className="flex items-center gap-2">
           <img src="logo.jpeg" alt="Logo" className="w-10 h-10" />
           <h1 className="text-2xl font-bold">
-            <span className="text-blue-500">Bahari</span>
+            <span className="text-blue-500">Bahari </span>
             <span className="text-green-500">Mezani</span>
           </h1>
         </div>

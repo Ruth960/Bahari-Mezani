@@ -151,6 +151,68 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+      {/* Service Packages Section */}
+      <div className="p-5">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold">Service Packages</h1>
+          <p className="text-gray-600">Flexible Solutions for Every Need</p>
+        </div>
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {/* Basic Package */}
+          <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-5">
+            <img
+              src="/images/starter-1.png"
+              alt="Basic Package"
+              className="w-46 h-auto mx-auto mb-4"
+            />
+            <h3 className="text-xl font-bold mb-2">Basic Package</h3>
+            <p className="text-gray-600 mb-4">Ksh.15o0.00</p>
+            <ul className="text-gray-600 text-sm mb-4">
+              <li>• Initial consultation</li>
+              <li>• Basic aquaculture advice</li>
+              <li>• Introductory waste management strategies</li>
+            </ul>
+            <button className="w-full p-2 bg-blue-500 text-white rounded-lg">SELECT</button>
+          </div>
+
+          {/* Standard Package */}
+          <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-5">
+            <img
+              src="/images/starter-2.png"
+              alt="Standard Package"
+              className="w-46 h-auto mx-auto mb-4"
+            />
+            <h3 className="text-xl font-bold mb-2">Standard Package</h3>
+            <p className="text-gray-600 mb-4">Ksh.3000.00</p>
+            <ul className="text-gray-600 text-sm mb-4">
+              <li>• Comprehensive consultation</li>
+              <li>• Detailed aquaculture planning</li>
+              <li>• Advanced waste management solutions</li>
+              <li>• Monthly follow-up sessions</li>
+            </ul>
+            <button className="w-full p-2 bg-blue-500 text-white rounded-lg">SELECT</button>
+          </div>
+
+          {/* Premium Package */}
+          <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-5">
+            <img
+              src="/images/starter-3.png"
+              alt="Premium Package"
+              className="w-46 h-auto mx-auto mb-4"
+            />
+            <h3 className="text-xl font-bold mb-2">Premium Package</h3>
+            <p className="text-gray-600 mb-4">Ksh5000.00</p>
+            <ul className="text-gray-600 text-sm mb-4">
+              <li>• Full-scale consultation services</li>
+              <li>• Custom aquaculture and agricultural solutions</li>
+              <li>• Ongoing support and monitoring</li>
+              <li>• Access to exclusive workshops</li>
+            </ul>
+            <button className="w-full p-2 bg-blue-500 text-white rounded-lg">SELECT</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
