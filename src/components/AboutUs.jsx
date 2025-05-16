@@ -39,7 +39,7 @@ export default function AboutUs() {
           {/* Team Member 1 */}
           <div className="bg-white rounded-lg shadow-md p-5 text-center">
             <img
-              src="public/BahariMezaniPhotos/C.E.O.jpg"
+              src="/BahariMezaniPhotos/C.E.O.jpg"
               alt="Alphonce Owiti"
               className="w-full  h-48 object-contain rounded-lg mb-4"
             />
@@ -68,7 +68,7 @@ export default function AboutUs() {
                 {/* Team Member 3 */}
           <div className="bg-white rounded-lg shadow-md p-5 text-center">
             <img
-              src="public/BahariMezaniPhotos/m2.jpg"
+              src="/BahariMezaniPhotos/m2.jpg"
               alt="Ms. Fatima Ali"
               className="w-full h-48 object-contain rounded-lg mb-4"
             />
