@@ -38,7 +38,7 @@ export default function Home() {
             <p className="mt-2">Turning waste into resources for a sustainable future.</p>
             <button
               className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
-              onClick={() => navigate("/learn-more")}
+              onClick={() => navigate("/projects")}
             >
               Learn More
             </button>
@@ -59,7 +59,7 @@ export default function Home() {
             </p>
             <button
               className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
-              onClick={() => navigate("/learn-more")}
+              onClick={() => navigate("/contacts")}
             >
               Get Involved
             </button>
@@ -80,7 +80,7 @@ export default function Home() {
             </p>
             <button
               className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
-              onClick={() => navigate("/learn-more")}
+              onClick={() => navigate("/About")}
             >
               Discover More
             </button>
