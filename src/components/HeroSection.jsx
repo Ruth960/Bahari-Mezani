@@ -7,15 +7,15 @@ function HeroSection() {
       className="flex flex-col gap-8 justify-center items-center w-full h-200 p-5 bg-cover bg-center ]"
       style={{ backgroundImage: "url('/images/homeBg.png')" }}
     >
-      <video
-        className="w-full  p-2 m-5 sm:max-w-[940px] md:max-w-[940px]"
-        controls
-      >
-        <source
-          src="https://youtu.be/jtlDoHnEymo?si=TX81Y82-YgD4pXUB"
-          type="video/mp4"
-        />
-      </video>
+      <iframe
+        className="w-full p-2 m-5 sm:max-w-[940px] md:max-w-[940px]"
+        height="480"
+        src="https://www.youtube.com/embed/jtlDoHnEymo"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
       <h1 className="text-4xl font-bold mb-2 text-center text-white ">
         Welcome to Bahari Mezani
       </h1>
