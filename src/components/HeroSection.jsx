@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 function HeroSection() {
+  const navigate = useNavigate();
 
   return (
     <div
@@ -25,6 +26,7 @@ function HeroSection() {
       <div className="flex gap-4 justify-center items-center">
         <button
           className="bg-white font-bold text-black py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-[#0077BE] hover:text-white"
+           onClick={() => navigate("/services")}
         >
           Book Now
         </button>

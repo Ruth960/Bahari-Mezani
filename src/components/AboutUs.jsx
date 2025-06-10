@@ -22,7 +22,7 @@ export default function AboutUs() {
             </div>
             <div className='flex flex-col items-center mt-15 w-1/3'>
               <h2 className="text-2xl font-bold">Empowerment Through Sustainability</h2>
-              <p className="text-sm text-left mt-5 text-gray-600">
+              <p className="text-sm text-left mt-5 text-gray-700">
                 At Bahari Mezani, we believe in empowering communities by integrating sustainable 
                 practices in agriculture and aquaculture. Our mission is to create innovative solutions that
                  not only support economic growth but also protect the environment..
