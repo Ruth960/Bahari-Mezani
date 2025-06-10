@@ -7,7 +7,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Bahari Mezani. All rights reserved.
         </p>
         <div className="flex justify-center space-x-4 mt-2">
-          <a href="#" className="text-gray-900 hover:text-white">
+          <a href="https://www.facebook.com/share/1H8uiPCWnD/" className="text-gray-900 hover:text-white">
             Facebook
           </a>
           <a href="https://www.linkedin.com/company/mesuct/about/" className="text-gray-900 hover:text-white">
