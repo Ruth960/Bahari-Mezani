@@ -9,7 +9,7 @@ function HeroSection() {
       style={{ backgroundImage: "url('/images/homeBg.png')" }}
     >
       <iframe
-        className="w-full p-2 m-5 sm:max-w-[940px] md:max-w-[940px]"
+        className="w-full p-10 m-5 sm:max-w-[940px] md:max-w-[940px]"
         height="480"
         src="https://www.youtube.com/embed/jtlDoHnEymo"
         title="YouTube video player"
@@ -35,4 +35,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default HeroSection
