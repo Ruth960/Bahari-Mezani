@@ -10,7 +10,6 @@ function HomePage() {
     <div className='bg-gradient-to-r from-blue-200 to-green-300'>
       <HeroSection />
       <Home />
-      <RecentProjects/>
       <Feedback />
       <Footer />
     </div>
