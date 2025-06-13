@@ -52,34 +52,9 @@ export default function Services() {
           {/* Card 3 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
-              src="/images/aquacultureIntergratedSystem.PNG"
+              src="/images/blackSoldier.PNG"
               alt="Integrated Aquaculture Systems"
               className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-bold mb-2">Integrated Aquaculture Systems</h3>
-              <p className="text-gray-600">
-                Our integrated systems combine aquaculture with other agricultural practices to
-                enhance productivity and sustainability.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Innovative Agriculture Section */}
-      <div className="p-5">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold">Innovative Agriculture</h1>
-          <p className="text-gray-600">Transforming Farming For a Sustainable Future</p>
-        </div>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {/* Card 1 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-col">
-            <img
-              src="/images/blackSoldier.PNG"
-              alt="Black Soldier Fly Farming"
-              className="w-full p-1 h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-bold mb-2">Black Soldier Fly Farming</h3>
@@ -89,45 +64,8 @@ export default function Services() {
               </p>
             </div>
           </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-col">
-            <img
-              src="/images/composite.PNG"
-              alt="Composting Techniques"
-              className="w-full p-1 h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-bold mb-2">Composting Techniques</h3>
-              <p className="text-gray-600">
-                Our composting services transform organic waste into nutrient-rich compost,
-                enhancing soil health and promoting sustainable agricultural practices.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden  flex flex-col md:flex-col">
-            <img
-              src="/images/wasteToenergy.PNG"
-              alt="Waste-to-Energy Solutions"
-              className="w-full p-1 h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-bold mb-2">Waste-to-Energy Solutions</h3>
-              <p className="text-gray-600">
-                We develop waste-to-energy systems that convert organic waste into renewable energy,
-                contributing to energy sustainability and reduced emissions.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
-
-      
-      
-
-      {/* Service Packages Section */}
      
     </div>
   );
