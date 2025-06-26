@@ -32,10 +32,10 @@ export default function Consoltations(){
 
             {/* Packeage subscriptions */}
          <div className="p-5">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold">Service Packages</h1>
-          <p className="text-gray-600">Flexible Solutions for Every Need</p>
-        </div>
+            <div className="text-center mb-8">
+              <h1 className="text-3xl font-bold">Service Packages</h1>
+              <p className="text-gray-600">Flexible Solutions for Every Need</p>
+            </div>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/* Basic Package */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-5">

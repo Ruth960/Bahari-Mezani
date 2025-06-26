@@ -5,14 +5,14 @@ export default function Navbar({ links }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className=" shadow-md top-0 fixed bg-white left-0 w-full z-50">
       <div className="flex items-center justify-between px-4 py-3 md:px-8">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="logo.jpeg" alt="Logo" className="w-10 h-10" />
-          <h1 className="text-2xl font-bold">
-            <span className="text-blue-500">Bahari </span>
-            <span className="text-green-500">Mezani</span>
+          <img src="logo2.png" alt="Logo" className="w-12 h-12" />
+          <h1 className="text-3xl font-bold p-2">
+            <span className="text-[#009dc4]">Bahari </span>
+            <span className="text-[#48bf91]">Mezani</span>
           </h1>
         </div>
 
