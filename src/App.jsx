@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import ServicesPage from './pages/ServicesPage'
+
 import ProductsPage from './pages/ProductsPage'
 import SustainabilityPage from './pages/SustainabiltyPage'
 import ContactsPage from './pages/ContactPage' 
@@ -14,7 +14,6 @@ function App() {
   const links = [
     { path: '/', text: 'Home' },
     { path: '/about', text: 'About Us' },
-    { path: '/services', text: 'Services' },
     { path: '/products', text: 'Products' },
     { path: '/initiatives', text: 'Sustainable Initiatives ' },
     { path: '/contacts', text: 'Contacts' },
@@ -28,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
+          
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/initiatives" element={<SustainabilityPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
