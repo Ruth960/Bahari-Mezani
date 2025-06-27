@@ -47,7 +47,7 @@ export default function Projects(){
 
                 <div className="flex flex-col items-center gap-4 p-5 bg-white rounded-lg shadow-md">
                     <img
-                        src="/Discussion.jpg"
+                        src="/images/community-empower.jpg"
                         alt="Youth Empowerement"
                         className="w-full h-auto rounded-lg"
                     />

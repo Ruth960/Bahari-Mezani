@@ -1,29 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function HeroSection() {
+const slides = [
+  {
+    image: './images/h1.jpeg',
+    title: 'Welcome to Bahari Mezani',
+    description:
+      "Where innovation meets the ocean to sustainably bring fresh fish to your table and empower Kenya's coastal communities.",
+    button: true,
+  },
+  {
+    image: './images/h2.jpeg',
+    title: 'Explore Our Services',
+    description:
+      "Discover a range of services designed to enhance your experience and support sustainable practices.",
+    button: false,
+  },
+];
+
+export default function HeroSection() {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
-  
-  const slides = [
-    {
-      video: '/videos/hereorsection vid1.mp4',
-      title: 'Welcome to Bahari Mezani',
-      description: "Where innovation meets the ocean to sustainably bring fresh fish to your table and empower Kenya's coastal communities."
-    },
-    {
-      video: '/videos/hereorsection vid2.mp4',
-      title: 'Welcome to Bahari Mezani',
-      description: "Where we use practical, locally adaptable solutions from mobile hatchery kits to Black Soldier Fly (BSF) feed systems to make sustainable aquaculture accessible to coastal farmers, youth, and women across Kenya."
-    }
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === 0 ? 1 : 0));
-    }, 10000); 
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 10000); // Change slide every 10 seconds
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
   const handleSlideChange = (index) => {
@@ -35,19 +39,15 @@ function HeroSection() {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
-            currentSlide === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            currentSlide === index ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div className="absolute inset-0 bg-black/50 z-10"></div>
-          <video
+          <img
             className="absolute top-0 left-0 w-full h-full object-cover"
-            src={slide.video}
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
+            src={slide.image}
+            alt={`Slide ${index + 1}`}
+          />
           <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               {slide.title}
@@ -55,7 +55,7 @@ function HeroSection() {
             <p className="text-xl md:text-2xl mb-8 text-white max-w-3xl">
               {slide.description}
             </p>
-            {index === 0 && (
+            {slide.button && (
               <button
                 className="bg-white font-bold text-black py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-[#0077BE] hover:text-white"
                 onClick={() => navigate("/services")}
@@ -67,7 +67,6 @@ function HeroSection() {
         </div>
       ))}
 
-      {/* Slide indicators */}
       <div className="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-3">
         {slides.map((_, index) => (
           <button
@@ -83,5 +82,3 @@ function HeroSection() {
     </div>
   );
 }
-
-export default HeroSection
