@@ -29,7 +29,7 @@ export default function AboutUs(){
         </div>
 
         {/* Vission and Mission */}
-        <div className="bg-[#a0eccf] py-16 mt-20 text-center"> 
+        <div className=" py-16 mt-20 text-center"> 
       <div className="flex flex-col md:flex-row justify-center items-start gap-12 max-w-6xl px-4"> 
         {/* Our Vision Section */}
         <div className="w-full  md:w-1/2 text-left">

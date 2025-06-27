@@ -11,8 +11,8 @@ import Footer from '../components/footer';
 
 export default function HomePage() {
   return (
-    <div className='bg-gradient-to-r from-blue-200 to-green-300'>
-    
+    //<div className='bg-gradient-to-r from-blue-200 to-green-300'>
+    <div className="bg-[#F1F7F5]">
       <HeroSection/>  
       <section id="about" className="py-20">
         <AboutUs />
