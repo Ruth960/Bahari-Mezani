@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 export default function Navbar({ links }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" shadow-md top-0 fixed bg-white left-0 w-full z-50">
+    <nav className="shadow-md top-0 fixed bg-white left-0 w-full z-50">
       <div className="flex items-center justify-between px-4 py-3 md:px-8">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -32,19 +31,14 @@ export default function Navbar({ links }) {
         >
           {links &&
             links.map((link, index) => (
-              <NavLink
+              <a
                 key={index}
-                to={link.path}
-                className={({ isActive }) =>
-                  `block px-4 py-2 text-lg ${
-                    isActive
-                      ? 'text-blue-500 underline'
-                      : 'hover:text-blue-500'
-                  }`
-                }
+                href={link.path}
+                className="block px-4 py-2 text-lg hover:text-blue-500"
+                onClick={() => setIsOpen(false)}
               >
                 {link.text}
-              </NavLink>
+              </a>
             ))}
         </div>
       </div>

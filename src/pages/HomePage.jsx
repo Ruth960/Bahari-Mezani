@@ -1,16 +1,38 @@
 import React from 'react'
-import HeroSection from '../components/HeroSection';
-import RecentProjects from '../components/recentProjects';
-import Home from '../components/home';
+import Contact from '../components/contacts'
+import HeroSection  from '../components/HeroSection'
+import AboutUs from '../components/AboutUs'
+import Products from '../components/products';
+import OrderProducts from '../components/OrderProducts';
+import Projects from '../components/initiatives';
 import Footer from '../components/footer';
 
-function HomePage() {
+
+
+export default function HomePage() {
   return (
     <div className='bg-gradient-to-r from-blue-200 to-green-300'>
-      <HeroSection />
-      <Footer />
+    
+      <HeroSection/>  
+      <section id="about" className="py-20">
+        <AboutUs />
+        {/* ... */}
+      </section>
+
+      <section id="products" className="py-20">
+        <Products/>
+        <OrderProducts />
+      </section>
+
+      <section id="initiatives" className="py-20">
+          <Projects/>
+      </section>
+
+      <section id="contacts" className="py-20">
+        {/* Contacts content here */}
+        <Contact />
+      </section>
+      <Footer/>
     </div>
   )
 }
-
-export default HomePage
