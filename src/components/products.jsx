@@ -51,7 +51,7 @@ export default function Products() {
           </div>
           <div>
             
-            <img src="./images/BSF.jpg"
+            <img src="./images/bsf-process.jpg"
               alt="BSF"
               className="w-full h-68 object-cover rounded-lg mb-4" />
           </div>
