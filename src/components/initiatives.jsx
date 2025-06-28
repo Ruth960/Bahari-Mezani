@@ -2,7 +2,7 @@
 export default function Projects(){
 
     return(
-        <div className="mt-20 custom-center" >
+        <div className="custom-center" >
             <div>
                 <h1 className="text-6xl text-[#009dc4] text-center text-bold p5">Our Sustainable Innitiatives</h1>
                 <h2 className="text-3xl text-[#48bf91] mt-5  text-center">Our Commitment to the Blue and Green Economy </h2>

@@ -2,7 +2,7 @@
 export default function AboutUs(){
 
   return(
-    <div className="mt-20 custom-center"> 
+    <div className="custom-center"> 
       
       <h1 className="text-6xl text-[#009dc4] text-center">Who We Are</h1>
 
