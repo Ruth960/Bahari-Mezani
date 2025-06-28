@@ -62,7 +62,7 @@ export default function Projects(){
 
                 <div className="flex flex-col items-center gap-4 p-5 bg-white rounded-lg shadow-md">
                     <img
-                        src="/images/BSF.jpg"
+                        src="/images/cages-farmimg.jpg"
                         alt="Aquaculture Ecosystem"
                         className="w-full h-auto rounded-lg"
                     />
