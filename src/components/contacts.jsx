@@ -105,7 +105,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="md:col-span-2 bg-[#009dc4] text-white font-semibold py-2 rounded-md hover:bg-[#007a92] transition"
+            className="  bg-[#009dc4] h-10 text-white font-semibold py-2 rounded-md hover:bg-[#007a92] transition"
           >
             {status === "sending"
               ? "Sending…"
