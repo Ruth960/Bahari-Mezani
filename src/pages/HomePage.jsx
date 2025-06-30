@@ -3,9 +3,11 @@ import Contact from '../components/contacts'
 import HeroSection  from '../components/HeroSection'
 import AboutUs from '../components/AboutUs'
 import Products from '../components/products';
+import ProductsImages from '../components/productsImages';
 import OrderProducts from '../components/OrderProducts';
 import Projects from '../components/initiatives';
 import Footer from '../components/footer';
+
 
 
 
@@ -21,6 +23,7 @@ export default function HomePage() {
 
       <section id="products" className="py-20">
         <Products/>
+        <ProductsImages />
         <OrderProducts />
       </section>
 
