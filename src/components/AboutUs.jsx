@@ -4,18 +4,12 @@ export default function AboutUs() {
       {/* 2-Column Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Column */}
-        <div className="space-y-4 md:pr-8">
-          <h3 className="text-3xl pl-10 text-[#009dc4] font-semibold  tracking-wide">
+        <div className="text-lg text-xl text-justify  text-black leading-relaxed space-y-5 md:pr-8">
+          <h2 className="text-5xl pl-10 text-[#009dc4] font-semibold  tracking-wide">
             Introduction
-          </h3>
-          <h1 className="text-4xl md:text-5xl pl-10 font-extrabold text-black leading-tight">
-            Bahari Mezani 
-          </h1>
-          <h1 className="text-4xl text-center md:text-5xl font-extrabold text-black leading-tight">
-           Ltd
-          </h1>
+          </h2>
           <p>
-            <strong>Bahari Mezani Ltd</strong> (formerly MESUCT HUB) is a Kenya-based blue economy enterprise committed to transforming East Africa’s seafood sector through sustainable innovation, circular farming, and community empowerment.
+            <strong className="text-4xl">Bahari Mezani Ltd</strong> (formerly MESUCT HUB) is a Kenya-based blue economy enterprise committed to transforming East Africa’s seafood sector through sustainable innovation, circular farming, and community empowerment.
           </p>
           <p>
             We process and market premium-quality fresh and dry fish—sourced from the Indian Ocean and Lake 
@@ -30,7 +24,7 @@ export default function AboutUs() {
         </div>
 
         {/* Right Column */}
-        <div className="text-lg  mt-5 text-black leading-relaxed space-y-5">
+        <div className="text-lg  mt-20 text-xl text-justify text-black leading-relaxed space-y-5 md:pr-8">
           
           
           <p>
