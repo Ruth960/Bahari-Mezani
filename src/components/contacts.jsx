@@ -2,26 +2,19 @@ import { useState } from "react";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState(null);
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    setStatus("sending");
-    try {
-      await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      setStatus("sent");
-      setForm({ name: "", email: "", message: "" });
-    } catch {
-      setStatus("error");
-    }
+    const { name, email, message } = form;
+    const mailtoLink = `mailto:ruthmwaniki202@gmail.com?subject=Contact Form Submission from ${name}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+    window.location.href = mailtoLink;
+    setForm({ name: "", email: "", message: "" });
   }
 
   return (
@@ -60,66 +53,57 @@ export default function Contact() {
             </div>
           </address>
         </div>
+        <div className="md:w-1/2 space-y-6">
+          <h2 className="text-2xl font-bold">Contact Us</h2>
 
-        {/* right form */}
-        <form
-          onSubmit={handleSubmit}
-          className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4"
-        >
-          <label className="block md:col-span-1">
-            <span className="text-[#009dc4] font-medium">Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              required
-              className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-[#009dc4] focus:border-[#009dc4]"
-            />
-          </label>
-
-          <label className="block md:col-span-1">
-            <span className="text-[#009dc4] font-medium">Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              required
-              className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-[#009dc4] focus:border-[#009dc4]"
-            />
-          </label>
-
-          <label className="block md:col-span-2">
-            <span className="text-[#009dc4] font-medium">Message</span>
-            <textarea
-              name="message"
-              rows="5"
-              value={form.message}
-              onChange={handleChange}
-              required
-              className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-[#009dc4] focus:border-[#009dc4]"
-            ></textarea>
-          </label>
-
-          <button
-            type="submit"
-            disabled={status === "sending"}
-            className="  bg-[#009dc4] h-10 text-white font-semibold py-2 rounded-md hover:bg-[#007a92] transition"
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            {status === "sending"
-              ? "Sending…"
-              : status === "sent"
-              ? "Sent!"
-              : "Send Message"}
-          </button>
+            <label className="block md:col-span-1">
+              <span className="text-[#009dc4] font-medium">Name</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-[#009dc4] focus:border-[#009dc4]"
+              />
+            </label>
 
-          {status === "error" && (
-            <p className="text-red-500 md:col-span-2">
-              Oops! Something went wrong. Please try again.
-            </p>
-          )}
-        </form>
+            <label className="block md:col--span-1">
+              <span className="text-[#009dc4] font-medium">Email</span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-[#009dc4] focus:border-[#009dc4]"
+              />
+            </label>
+
+            <label className="block md:col-span-2">
+              <span className="text-[#009dc4] font-medium">Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                value={form.message}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-[#009dc4] focus:border-[#009dc4]"
+              ></textarea>
+            </label>
+
+            <button
+              type="submit"
+              className="bg-[#009dc4] h-10 text-white font-semibold py-2 rounded-md hover:bg-[#007a92] transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
